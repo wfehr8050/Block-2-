@@ -1,0 +1,147 @@
+/* ==========================================================
+   Positioning Bug Hunt: bug-hunt.css
+   Unit 5, Block 2, second half
+   ========================================================== */
+
+/* ---------- Provided styles: do not change these ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  color: #1F3864;
+  background-color: #F4F7FD;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: Cambria, Georgia, serif;
+  margin-top: 0;
+}
+
+main {
+  padding: 32px;
+}
+
+.board-header {
+  background-color: #1F3864;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  z-index: 10;
+}
+
+.board-header h1 {
+  margin: 0;
+}
+
+.board-header p {
+  margin: 4px 0 0;
+  color: #CADCFC;
+}
+
+.widget {
+  width: 480px;
+  background-color: #FFFFFF;
+  border: 2px solid #1F3864;
+  padding: 16px;
+  margin-bottom: 40px;
+}
+
+.bug-label {
+  display: inline-block;
+  background-color: #1F3864;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 2px 10px;
+  margin-bottom: 8px;
+}
+
+.demo-card {
+  border: 3px solid #1F3864;
+  background-color: #CADCFC;
+  padding: 24px;
+  margin-top: 16px;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: #1F3864;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 4px 12px;
+  border: 2px solid #FFFFFF;
+}
+
+.word {
+  display: inline-block;
+  border: 2px solid #1F3864;
+  padding: 6px 14px;
+  background-color: #CADCFC;
+}
+
+.word-row {
+  min-height: 80px;
+}
+
+.agree-bar {
+  background-color: #1F3864;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+}
+
+.tall li {
+  margin-bottom: 40px;
+}
+
+.filler {
+  min-height: 900px;
+}
+
+
+/* ---------- THE BUGS: fix each one under its comment ---------- */
+
+/* Bug 1: The badge flies to the corner of the PAGE instead of the card. */
+.card-a {
+}
+
+
+/* Bug 2: The badge is in the right spot but gets chopped off.
+   (Someone added the line below "to keep things tidy.") */
+.card-b {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Bug 3: "top: 20px" does nothing. */
+.nudge {
+  top: 20px;
+}
+
+
+/* Bug 4: The header has position: sticky and top: 0, but it scrolls away.
+   Hint: the problem is NOT in the header's own rule. Look at its parent. */
+.page-wrap {
+  overflow: hidden;
+}
+
+.board-header {
+  position: sticky;
+  top: 0;
+}
+
+
+/* Bug 5: The "I agree" bar should stick to the BOTTOM of the screen while
+   the rules list is on screen, but it just sits at the end of the list. */
+.agree-bar {
+  position: sticky;
+}

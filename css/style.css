@@ -1,0 +1,202 @@
+/* ==========================================================
+   Web Design Club: style.css
+   Unit 5, Block 2 starting point.
+   Block 1 is already finished in this file. Your Block 2 work
+   goes at the bottom, under the task comments.
+   ========================================================== */
+
+/* Bug 6: border-box reset (always at the very top) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Provided styles ---------- */
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  color: #1F3864;
+  background-color: #F4F7FD;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: Cambria, Georgia, serif;
+}
+
+.site-header {
+  background-color: #1F3864;
+  color: #FFFFFF;
+}
+
+.tagline {
+  color: #CADCFC;
+}
+
+.events h2 {
+  text-align: center;
+}
+
+.card {
+  background-color: #FFFFFF;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card-date {
+  background-color: #CADCFC;
+  font-weight: bold;
+}
+
+.card-link {
+  display: inline-block; /* lets padding push neighbors away; more on display in Block 2 */
+  color: #1F3864;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-footer {
+  background-color: #1E2761;
+  color: #CADCFC;
+  text-align: center;
+}
+
+
+/* ---------- Block 1 work (finished) ---------- */
+
+/* Task 1: Close the gap */
+body {
+  margin: 0;
+}
+
+.site-header {
+  padding: 32px 24px;
+}
+
+/* Tasks 2, 3, 5, 7 and Bug 6: the card (400px wide thanks to the reset) */
+.card {
+  width: 400px;
+  padding: 24px;
+  border: 3px solid #1F3864;
+  border-left: 10px solid #CADCFC;
+  margin: 0 auto 24px;
+  margin-top: 16px;
+}
+
+/* Task 4: Shape the date tag */
+.card-date {
+  padding: 6px 12px;
+  margin: 0 0 12px;
+}
+
+/* Task 6: Style the button and footer */
+.card-link {
+  padding: 8px 16px;
+  border: 2px solid #1F3864;
+  border-radius: 6px;
+}
+
+.site-footer {
+  padding: 24px;
+  margin-top: 48px;
+}
+
+/* ==========================================================
+   BLOCK 2
+   ========================================================== */
+
+/* ---------- Provided styles for Block 2: do not change ---------- */
+
+.officers h2 {
+  text-align: center;
+}
+
+.bio {
+  background-color: #FFFFFF;
+}
+
+.bio h3 {
+  margin-top: 0;
+}
+
+.office-hours {
+  font-style: italic;
+}
+
+.badge {
+  background-color: #1F3864;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.join-btn {
+  background-color: #1F3864;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+/* ---------- PART 1: Normal Flow & Float ---------- */
+
+/* Build A: Style the bio box (Block 1 skills) */
+.bio {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  padding: 24px;
+  border: 3px solid #1F3864;
+}
+
+/* Build B: Float the photo */
+.officer-photo {
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+/* Task 1: Float the second photo to the right */
+.bio-right .officer-photo {
+  float: right;
+  margin-left: 16px;
+}
+
+
+/* Task 2: Contain the floats */
+.bio {
+  display: flow-root;
+}
+
+/* Task 3: Clear the office hours */
+.office-hours {
+  clear: both;
+}
+
+/* Task 4: Round photos */
+.officer-photo {
+  border: 3px solid #CADCFC;
+  border-radius: 50%;
+}
+
+/* Task 5: Why not floats? (try it, then delete it) */
+.card
+  
+
+/* ---------- PART 2: Positioning ---------- */
+
+/* Build C: The NEW badge */
+
+
+/* Task 6: Sticky header */
+
+
+/* Task 7: Fixed Join button */
+
+
+/* Task 8: Don't cover the footer */
+

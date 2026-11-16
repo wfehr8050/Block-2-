@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Design Club positioning bug hunt.">
+  <title>Positioning Bug Hunt</title>
+  <link rel="stylesheet" href="css/bug-hunt.css">
+</head>
+<body>
+  <div class="page-wrap">
+
+    <!-- Bug 4 lives here -->
+    <header class="board-header">
+      <h1>Positioning Bug Hunt</h1>
+      <p>This header is supposed to stick to the top while you scroll.</p>
+    </header>
+
+    <main>
+      <p class="intro">Fix each bug in <code>css/bug-hunt.css</code>. Every bug is one or two lines.</p>
+
+      <!-- Bug 1 -->
+      <section class="widget">
+        <span class="bug-label">Bug 1</span>
+        <h2>The runaway badge</h2>
+        <div class="demo-card card-a">
+          <span class="badge">NEW</span>
+          <p>This badge should hang off the top-right corner of THIS card.</p>
+        </div>
+      </section>
+
+      <!-- Bug 2 -->
+      <section class="widget">
+        <span class="bug-label">Bug 2</span>
+        <h2>The chopped badge</h2>
+        <div class="demo-card card-b">
+          <span class="badge">NEW</span>
+          <p>This badge is in the right place, but part of it is cut off.</p>
+        </div>
+      </section>
+
+      <!-- Bug 3 -->
+      <section class="widget">
+        <span class="bug-label">Bug 3</span>
+        <h2>The nudge that won't nudge</h2>
+        <p>The word in the box below should sit 20px lower than the others, without moving anything else.</p>
+        <p class="word-row"><span class="word">Flow</span> <span class="word nudge">Float</span> <span class="word">Position</span></p>
+      </section>
+
+      <!-- Bug 5 -->
+      <section class="widget tall">
+        <span class="bug-label">Bug 5</span>
+        <h2>Club Rules</h2>
+        <p>The "I agree" bar at the end of this list should stay stuck to the bottom of your screen the whole time you're scrolling through the rules.</p>
+        <ol>
+          <li>Commit early, commit often.</li>
+          <li>Validate your HTML before you ask for help.</li>
+          <li>Check DevTools before you check with a friend.</li>
+          <li>Name files in lowercase with hyphens.</li>
+          <li>Comment your CSS so future you understands it.</li>
+          <li>Test in more than one browser.</li>
+          <li>Never use <code>!important</code> to win an argument.</li>
+          <li>Snacks stay away from keyboards.</li>
+          <li>Help the next person the way someone helped you.</li>
+          <li>Have fun breaking things, then fix them.</li>
+        </ol>
+        <div class="agree-bar">I agree to the club rules</div>
+      </section>
+
+      <section class="widget filler">
+        <h2>Keep scrolling</h2>
+        <p>This space is here so the page is tall enough to scroll. Watch the header (Bug 4) and the "I agree" bar (Bug 5) as you go.</p>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>

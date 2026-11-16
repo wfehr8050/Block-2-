@@ -1,0 +1,54 @@
+/* Positioning Detective: no peeking until your handout says so! */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  color: #1F3864;
+  background-color: #F4F7FD;
+  line-height: 1.5;
+  margin: 0;
+  padding: 32px 32px 120px;
+}
+
+h1, h2 { font-family: Cambria, Georgia, serif; }
+h2 { margin-top: 0; }
+.intro { max-width: 640px; }
+
+.zone {
+  width: 520px;
+  background-color: #FFFFFF;
+  border: 2px solid #1F3864;
+  padding: 16px;
+  margin-bottom: 48px;
+}
+
+.plain {
+  background-color: #EEF3FC;
+  border: 1px dashed #4A5F8C;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.box {
+  width: 140px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 3px solid #1F3864;
+  font-weight: bold;
+  text-align: center;
+  background-color: #CADCFC;
+}
+
+.box-1 { position: static; }
+
+.box-2 { position: relative; top: 30px; left: 80px; background-color: #F9CC9D; }
+
+.zone-b { position: relative; min-height: 220px; }
+.box-3 { position: absolute; right: 16px; bottom: 16px; background-color: #C3D08B; }
+
+.box-4 { position: fixed; left: 24px; bottom: 24px; background-color: #FCDB8F; z-index: 5; }
+
+.box-5 { position: sticky; top: 0; background-color: #8CB6C0; z-index: 4; }
+
+.zone-c .plain { height: 120px; }
